@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Ágil Gourmet - Restaurante</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Ágil -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icones -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Livrarias Style -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        
+        <!-- Função carregando -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Carregando...</span>
+            </div>
+        </div>
+        
+
+
+        <!-- Navbar -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img src="img/logo.png" alt="Logo">
+                        
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Sobre</a>
+                        <a href="service.html" class="nav-item nav-link">Serviços</a>
+                        <a href="menu.html" class="nav-item nav-link active">Cardápio</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Cardápio</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Cardápio</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- Cardápio -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Cardápio</h5>
+                    <h1 class="mb-5">Itens Populares</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa fa-glass-whiskey fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Populares</small>
+                                    <h6 class="mt-n1 mb-0">Bebidas</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Populares</small>
+                                    <h6 class="mt-n1 mb-0">Hamburgueres</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Populares</small>
+                                    <h6 class="mt-n1 mb-0">Peticos</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                     <!--Bebidas-->
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/limonada.jpg.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Limonadas Gourmet</span>
+                                                <span class="text-primary">R$25</span>
+                                            </h5>
+                                            <small class="fst-italic">Limonada com morango e manjericão, Limonada com framboesa e alecrim, Limonada com pêssego e tomilho.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/cha.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chás Especiais</span>
+                                                <span class="text-primary">R$15</span>
+                                            </h5>
+                                            <small class="fst-italic">Chá gelado de pêssego, Chá verde com hortelã e limão, Chá de hibisco com framboesas.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/moki.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Mocktails (Coquetéis sem Álcool)</span>
+                                                <span class="text-primary">R$25</span>
+                                            </h5>
+                                            <small class="fst-italic">Limonada com lavanda, Mocktail de melancia e hortelã, Mojito sem álcool com soda e folhas de hortelã.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/coquiteis.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Coquetéis Artesanais</span>
+                                                <span class="text-primary">R$34</span>
+                                            </h5>
+                                            <small class="fst-italic">Margarita de frutas frescas, Mojito de morango e manjericão, Moscow Mule com gengibre fresco.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/refri.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Refrigerante Lata</span>
+                                                <span class="text-primary">R$15</span>
+                                            </h5>
+                                            <small class="fst-italic">coca-cola, Fantas, Guaraná.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/sucos.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Sucos (copo)</span>
+                                                <span class="text-primary">R$13</span>
+                                            </h5>
+                                            <small class="fst-italic">Laranja, Limão, Acerola, Maracujá.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/cervejas.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Cervejas</span>
+                                                <span class="text-primary">A partir de R$25</span>
+                                            </h5>
+                                            <small class="fst-italic"> Heineken, Sparten, Corona, Brahma Duplo Malte</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/caipirinha.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Caipirinha</span>
+                                                <span class="text-primary">R$15</span>
+                                            </h5>
+                                            <small class="fst-italic">apenas uma caipirinha.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        <!--hamburguer-->
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/hambugue 4.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Hambúrguer de Frango</span>
+                                                <span class="text-primary">R$43</span>
+                                            </h5>
+                                            <small class="fst-italic">peito de frango moído, cebola roxa picada, alho picado, pimenta caiena, sal e pimenta-do-reino.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/hambugue 3.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Hambúrguer de Salmão</span>
+                                                <span class="text-primary">R$56</span>
+                                            </h5>
+                                            <small class="fst-italic">Salmão fresco moído, cebola roxa picada, alho picado, suco de limão, sal e pimenta-do-reino.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/hamburgue 2.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Hambúrguer de Cordeiro</span>
+                                                <span class="text-primary">R$45</span>
+                                            </h5>
+                                            <small class="fst-italic">Carne de cordeiro moída, cebola roxa picada, alho picado, cominho em pó, coentro fresco picado, sal e pimenta-do-reino.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/hambugur 5.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Hambúrguer Vegetariano</span>
+                                                <span class="text-primary">R$35</span>
+                                            </h5>
+                                            <small class="fst-italic">Grãos cozidos (grão-de-bico, lentilhas), Vegetais ralados (cenoura, cogumelos), Aveia em flocos para dar liga, Temperos cuidadosamente selecionados</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/hamburguer 6.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Hambúrguer Mediterrâneo</span>
+                                                <span class="text-primary">R$56</span>
+                                            </h5>
+                                            <small class="fst-italic">Carne de hambúrguer temperada com alho e ervas, Tomate seco, Azeitonas pretas, Queijo feta e molho tzatziki.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/hamburgue 7.jpg.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>X-Lalas</span>
+                                                <span class="text-primary">R$46</span>
+                                            </h5>
+                                            <small class="fst-italic">Carne de hambúrguer com tempero sulista, Molho barbecue, Cebolas caramelizadas, Bacon defumado.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/hamburgue 8.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Hambúrguer Tex-Mex</span>
+                                                <span class="text-primary">R$53</span>
+                                            </h5>
+                                            <small class="fst-italic">Carne de hambúrguer temperada com especiarias mexicanas, Guacamole fresco, Salsa de milho, Queijo cheddar derretido.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/hambugue 9.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Hambúrguer Caprese</span>
+                                                <span class="text-primary">R$35</span>
+                                            </h5>
+                                            <small class="fst-italic">Carne de hambúrguer temperada com manjericão fresco, Tomate fatiado, Muçarela de búfala, Pesto de manjericão como molho.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                <!--peticos-->
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/batata frita.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Porção De Batata Frita</span>
+                                                <span class="text-primary">A partir de R$15</span>
+                                            </h5>
+                                            <small class="fst-italic">Porção pequena, media, grande.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/batata assada.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Batatas Assadas</span>
+                                                <span class="text-primary">R$32</span>
+                                            </h5>
+                                            <small class="fst-italic"> Batatas assadas com queijo e bacon ou Batatas assadas com alecrim e alho.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/camarão.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Camarões Grelhados</span>
+                                                <span class="text-primary">R$36</span>
+                                            </h5>
+                                            <small class="fst-italic">Camarões grelhados com molho de alho</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/espetinho.png" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Espetinhos</span>
+                                                <span class="text-primary">R$15</span>
+                                            </h5>
+                                            <small class="fst-italic">Espetinhos de frango com molho de iogurte, Espetinhos de carne com chimichurri.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/rolinho.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Rolinhos de Primavera</span>
+                                                <span class="text-primary">R$25</span>
+                                            </h5>
+                                            <small class="fst-italic">Rolinhos de primavera vegetarianos com molho de amendoim ou Rolinhos de primavera de frango com molho agridoce.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/mini.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Mini Quiches</span>
+                                                <span class="text-primary">R$25</span>
+                                            </h5>
+                                            <small class="fst-italic">Quiche de espinafre e queijo feta. Quiche de bacon e queijo.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/bru.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Bruschettas</span>
+                                                <span class="text-primary">R$15</span>
+                                            </h5>
+                                            <small class="fst-italic">Bruschettas de tomate, manjericão e queijo. Bruschettas de cogumelos com queijo.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/tabua.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Tábua de Queijos e Embutidos</span>
+                                                <span class="text-primary">R$57</span>
+                                            </h5>
+                                            <small class="fst-italic">Variedade de queijos, brie, gorgonzola, e cheddar. Embutidos, como salame, presunto e coppa.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+     <!-- Rodapé -->
+     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Nossa Localização</h4>
+                    <a class="btn btn-link">ENCONTRE-NOS NO MAPA</a>
+                    <button><a href="https://maps.app.goo.gl/49iSBu3qBkpWocvj9" target="_blank"><img src="img/mapa.png" width="100%" alt="mapa"></a></button>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contatos</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Avenida Cabo Branco, João Pessoa - PB</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(83) 3055-0021</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>contato@agilgourmet.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Horários</h4>
+                    <h5 class="text-light fw-normal">Segunda</h5>
+                    <p> Fechado</p>
+                    <h5 class="text-light fw-normal">Terça - Quinta</h5>
+                    <p> 14h - 21h</p>
+                    <h5 class="text-light fw-normal">Sexta - Domingo</h5>
+                    <p> 15h - 23h</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Novidades</h4>
+                    <p>Receba nossas novidades diretamente no seu e-mail.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu e-mail">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="letraRodape">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <div class="letraRodape">
+                            <img src="img/letraRodape.png" alt="Logo">
+                        </div>                             
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Botão de rolagem para início  -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- Livrarias JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
